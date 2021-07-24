@@ -61,7 +61,7 @@ public class ReforgedPlaceholders implements PlaceholderManager<EntityPlayerMP> 
                 return "UNDEFINED";
             }
 
-            String remainingPlaceholder = placeholder.replace("party_slot_", "").substring(1);
+            String remainingPlaceholder = placeholder.replace("party_slot_", "").substring(2);
             Pokemon pokemon = party.get(slot);
 
             if (pokemon == null) {
