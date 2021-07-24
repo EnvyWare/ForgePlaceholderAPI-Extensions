@@ -1,3 +1,4 @@
 rootProject.name = 'ForgePlaceholders-Extensions'
 
-include 'forge'
+include 'forge',
+        'reforged'

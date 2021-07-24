@@ -1,0 +1,13 @@
+jar {
+    archiveName = "ReforgedPlaceholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+}
+
+dependencies {
+    compileOnly ('com.pixelmonmod.pixelmon:Pixelmon-1.12.2-8.2.0-server:1.0')
+}
