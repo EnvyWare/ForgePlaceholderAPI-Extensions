@@ -1,4 +1,5 @@
 rootProject.name = 'ForgePlaceholders-Extensions'
 
 include 'forge',
-        'reforged'
+        'reforged',
+        'luckperms'
