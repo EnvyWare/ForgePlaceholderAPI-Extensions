@@ -1,0 +1,15 @@
+jar {
+    archiveName = "ReforgedPlaceholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Pixelmon-Development:SimpleVoteRewards:0.4.0'
+}
