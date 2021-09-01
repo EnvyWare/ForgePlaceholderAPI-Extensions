@@ -8,7 +8,7 @@ public class SimpleVoteRewardsPlaceholders implements PlaceholderManager<EntityP
 
     @Override
     public String getIdentifier() {
-        return "reforged";
+        return "simplevoterewards";
     }
 
     @Override

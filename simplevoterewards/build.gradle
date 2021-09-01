@@ -1,5 +1,5 @@
 jar {
-    archiveName = "ReforgedPlaceholders.jar"
+    archiveName = "SimpleVoteRewardsPlaceholders.jar"
 }
 
 repositories {
