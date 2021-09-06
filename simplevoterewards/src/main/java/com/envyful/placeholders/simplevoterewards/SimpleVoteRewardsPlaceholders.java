@@ -30,7 +30,8 @@ public class SimpleVoteRewardsPlaceholders implements PlaceholderManager<EntityP
     public String onPlaceholderRequest(EntityPlayerMP player, String placeholder) {
         switch (placeholder.toLowerCase()) {
             case "vote_party":
-                return SimpleVoteRewardsForge.getInstance().getVoteCounter() + "";
+                return (SimpleVoteRewardsForge.getInstance().getConfig().getVotePartyRequired()
+                        - SimpleVoteRewardsForge.getInstance().getVoteCounter()) + "";
         }
 
         return "UNDEFINED";
