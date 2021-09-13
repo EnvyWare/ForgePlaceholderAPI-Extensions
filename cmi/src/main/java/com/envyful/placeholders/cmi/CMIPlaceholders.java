@@ -13,7 +13,7 @@ public class CMIPlaceholders implements PlaceholderManager<EntityPlayerMP> {
 
     @Override
     public String getIdentifier() {
-        return "simplevoterewards";
+        return "cmi";
     }
 
     @Override
