@@ -1,0 +1,2 @@
+com/envyful/placeholders/simplevoterewards/SimpleVoteRewardsPlaceholders.java
+ com.envyful.placeholders.simplevoterewards.SimpleVoteRewardsPlaceholders

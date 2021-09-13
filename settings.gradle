@@ -3,4 +3,5 @@ rootProject.name = 'ForgePlaceholders-Extensions'
 include 'forge',
         'reforged',
         'luckperms',
-'simplevoterewards'
+        'simplevoterewards',
+        'cmi'
