@@ -86,7 +86,28 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
-  <component name="RunManager" selected="Gradle.ForgePlaceholderAPI-Extensions:simplevoterewards [build]">
+  <component name="RunManager" selected="Gradle.ForgePlaceholderAPI-Extensions:cmi [build]">
+    <configuration name="ForgePlaceholderAPI-Extensions:cmi [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cmi" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ForgePlaceholderAPI-Extensions:forge [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,6 +194,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ForgePlaceholderAPI-Extensions:cmi [build]" />
         <item itemvalue="Gradle.ForgePlaceholderAPI-Extensions:simplevoterewards [build]" />
         <item itemvalue="Gradle.ForgePlaceholderAPI-Extensions:forge [build]" />
         <item itemvalue="Gradle.ForgePlaceholderAPI-Extensions:luckperms [build]" />
