@@ -2,6 +2,7 @@ package com.envyful.placeholders.forge;
 
 import com.envyful.papi.api.PlaceholderManager;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class ForgePlaceholders implements PlaceholderManager<EntityPlayerMP> {
 
@@ -32,6 +33,8 @@ public class ForgePlaceholders implements PlaceholderManager<EntityPlayerMP> {
             case "displayname" : return player.getDisplayNameString();
             case "health" : return player.getHealth() + "";
             case "food" : return player.getFoodStats().getFoodLevel() + "";
+            case "online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getPlayers().size() + "";
+            case "max_online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getMaxPlayers() + "";
         }
 
         return "UNDEFINED";
