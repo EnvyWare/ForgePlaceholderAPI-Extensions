@@ -43,11 +43,29 @@ public class ReforgedPlaceholders implements PlaceholderManager<EntityPlayerMP> 
                 ) + "%";
             case "dex_count" : return party.pokedex.countCaught() + "";
             case "seen_count" : return party.pokedex.countSeen() + "";
-            case "wins" : return party.stats.getWins() + "";
-            case "loses" : return party.stats.getLosses() + "";
-            case "wl_ratio" : return String.format(
-                    "%.2f",
-                    ((party.stats.getWins() + 0.000) / party.stats.getLosses()) * 100);
+            case "wins" : {
+                if (party.stats == null) {
+                    return "0";
+                }
+
+                return party.stats.getWins() + "";
+            }
+            case "loses" :  {
+                if (party.stats == null) {
+                    return "0";
+                }
+
+                return party.stats.getLosses() + "";
+            }
+            case "wl_ratio" : {
+                if (party.stats == null || party.stats.getLosses() == 0) {
+                    return "0";
+                }
+
+                return String.format(
+                        "%.2f",
+                        ((party.stats.getWins() + 0.000) / party.stats.getLosses()) * 100);
+            }
             case "balance" : return party.getMoney() + "";
             case "highest_level" : return party.getHighestLevel() + "";
             case "average_level" : return party.getAverageLevel() + "";
