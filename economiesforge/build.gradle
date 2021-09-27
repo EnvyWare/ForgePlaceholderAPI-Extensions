@@ -1,5 +1,5 @@
 jar {
-    archiveName = "CMIPlaceholders.jar"
+    archiveName = "ForgeEconomies.jar"
 }
 
 repositories {
