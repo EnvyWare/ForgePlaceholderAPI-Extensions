@@ -4,4 +4,5 @@ include 'forge',
         'reforged',
         'luckperms',
         'simplevoterewards',
-        'cmi'
+        'cmi',
+        'economiesforge'
