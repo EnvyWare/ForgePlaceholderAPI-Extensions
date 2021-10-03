@@ -82,7 +82,7 @@ public class EconomiesForgePlaceholders implements PlaceholderManager<EntityPlay
                 }
 
                 return (economyFromConfig.isPrefix() ? economyFromConfig.getEconomyIdentifier() : "") +
-                        String.format(".2%f", attribute.getAccount(economyFromConfig).getBalance()) +
+                        String.format("%.2f", attribute.getAccount(economyFromConfig).getBalance()) +
                         (!economyFromConfig.isPrefix() ? economyFromConfig.getEconomyIdentifier() : "");
             }
             case "display" : return economyFromConfig.getDisplayName();
