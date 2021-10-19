@@ -35,7 +35,7 @@ subprojects {
         jarFile("../gradle/wrapper/gradle-wrapper.jar")
     }
 
-    version = '0.2.0'
+    version = '1.8.0'
 
     task versionedRelease(type: Copy) {
         group "build"
