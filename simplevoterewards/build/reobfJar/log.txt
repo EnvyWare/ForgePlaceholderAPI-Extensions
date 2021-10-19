@@ -1,4 +1,4 @@
-Args: "--in-jar", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\simplevoterewards\build\libs\SimpleVoteRewardsPlaceholders.jar", "--out-jar", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\simplevoterewards\build\reobfJar\output.jar", "--srg-in", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\simplevoterewards\build\createMcpToSrg\output.tsrg", "--live"
+Args: "--in-jar", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\simplevoterewards\build\libs\SimpleVoteRewardsPlaceholders.jar", "--out-jar", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\simplevoterewards\build\reobfJar\output.jar", "--srg-in", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\simplevoterewards\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\dnorr\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.9.0\SpecialSource-1.9.0-shaded.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.github.Pixelmon-Development.ForgePlaceholderAPI\api\0.0.1\6bdb3c188389b55a27b1c4ad970e47d7dfdee161\api-0.0.1.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.github.Pixelmon-Development.API\commons\0.3.6\aa6ca1f2a0f55b7a019dbaa1d4cbee05a20da4ea\commons-0.3.6.jar
@@ -70,7 +70,7 @@ Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.mojang\text2spe
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\io.leangen.geantyref\geantyref\1.3.11\bc9c03b53917314d21fe6276aceb08aa84bf80dd\geantyref-1.3.11.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.7.1\ca962123e5628d43c0dd7440f087443c19aa1dbf\checker-qual-3.7.1.jar
-WorkDir: C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\simplevoterewards\build\reobfJar
+WorkDir: C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\simplevoterewards\build\reobfJar
 Main: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings

@@ -66,7 +66,7 @@ public class EconomiesForgePlaceholders implements PlaceholderManager<EntityPlay
                     return "0.0";
                 }
 
-                return String.format(".2%f", attribute.getAccount(economyFromConfig).getBalance());
+                return String.format("%.2f", attribute.getAccount(economyFromConfig).getBalance());
             }
             case "balformat": {
                 ForgeEnvyPlayer target = EconomiesForge.getInstance().getPlayerManager().getPlayer(player);

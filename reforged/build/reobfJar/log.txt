@@ -1,7 +1,7 @@
-Args: "--in-jar", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\reforged\build\libs\ReforgedPlaceholders.jar", "--out-jar", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\reforged\build\reobfJar\output.jar", "--srg-in", "C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\reforged\build\createMcpToSrg\output.tsrg", "--live"
+Args: "--in-jar", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\reforged\build\libs\ReforgedPlaceholders.jar", "--out-jar", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\reforged\build\reobfJar\output.jar", "--srg-in", "C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\reforged\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\dnorr\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.9.0\SpecialSource-1.9.0-shaded.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.github.Pixelmon-Development.ForgePlaceholderAPI\api\0.0.1\6bdb3c188389b55a27b1c4ad970e47d7dfdee161\api-0.0.1.jar
-Classpath: C:\Users\dnorr\Documents\Work\Open source\Libraries\Pixelmon-1.12.2-8.2.0-server.jar
+Classpath: C:\Users\dnorr\Documents\Work\New OS\Libraries\Pixelmon-1.12.2-8.2.0-server.jar
 Classpath: C:\Users\dnorr\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2854_mapped_snapshot_20180814-1.12\forge-1.12.2-14.23.5.2854_mapped_snapshot_20180814-1.12-recomp.jar
 Classpath: C:\Users\dnorr\.gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
@@ -62,7 +62,7 @@ Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwj
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b04f3ee8f5e43fa3b162981b50bb72fe1acabb33\lwjgl-platform-2.9.4-nightly-20150209.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar
 Classpath: C:\Users\dnorr\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar
-WorkDir: C:\Users\dnorr\Documents\Work\Open source\ForgePlaceholderAPI-Extensions\reforged\build\reobfJar
+WorkDir: C:\Users\dnorr\Documents\Work\New OS\ForgePlaceholderAPI-Extensions\reforged\build\reobfJar
 Main: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings
