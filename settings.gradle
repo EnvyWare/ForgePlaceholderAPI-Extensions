@@ -6,3 +6,5 @@ include 'forge',
         'simplevoterewards',
         'cmi',
         'economiesforge'
+include 'ultimatepokebuilder'
+
