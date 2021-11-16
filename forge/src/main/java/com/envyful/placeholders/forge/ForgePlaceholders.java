@@ -35,8 +35,24 @@ public class ForgePlaceholders implements PlaceholderManager<EntityPlayerMP> {
             case "food" : return player.getFoodStats().getFoodLevel() + "";
             case "online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getPlayers().size() + "";
             case "max_online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getMaxPlayers() + "";
+            case "tps" : {
+                double meanTickTime = mean(FMLCommonHandler.instance().getMinecraftServerInstance().tickTimeArray) * 1.0E-6D;
+                double meanTPS = Math.min(1000.0/meanTickTime, 20);
+                return meanTPS + "";
+            }
+            case "ping" : return player.ping + "";
         }
 
         return "UNDEFINED";
+    }
+
+    private static long mean(long[] values)
+    {
+        long sum = 0L;
+        for (long v : values)
+        {
+            sum += v;
+        }
+        return sum / values.length;
     }
 }
