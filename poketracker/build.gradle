@@ -1,0 +1,19 @@
+jar {
+    archiveName = "PokeTrackerPlaceholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+    flatDir {
+        dirs '../libs/'
+    }
+
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+}
+
+dependencies {
+    implementation group: 'com.github.Pixelmon-Development.API', name: 'commons', version: '0.4.9'
+    compileOnly 'com.envyful.economies.forge:PokeTracker-Forge:1.0'
+}

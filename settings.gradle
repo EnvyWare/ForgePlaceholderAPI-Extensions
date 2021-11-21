@@ -5,6 +5,7 @@ include 'forge',
         'luckperms',
         'simplevoterewards',
         'cmi',
-        'economiesforge'
-include 'ultimatepokebuilder'
+        'economiesforge',
+        'ultimatepokebuilder',
+        'poketracker'
 
