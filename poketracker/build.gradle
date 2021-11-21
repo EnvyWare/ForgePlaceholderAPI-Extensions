@@ -15,5 +15,5 @@ repositories {
 
 dependencies {
     implementation group: 'com.github.Pixelmon-Development.API', name: 'commons', version: '0.4.9'
-    compileOnly 'com.envyful.economies.forge:PokeTracker-Forge:1.0'
+    compileOnly 'com.envyful.poke.tracker.forge:PokeTracker-Forge:1.0'
 }
