@@ -77,6 +77,8 @@ public class PokeTrackerForgePlaceholders implements PlaceholderManager<EntityPl
                 }
 
                 return "Active";
+            case "catcher" :
+                return entityData.getCatcher();
         }
 
         return "UNDEFINED";
