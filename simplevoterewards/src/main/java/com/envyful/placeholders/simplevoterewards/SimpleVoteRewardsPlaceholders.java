@@ -32,6 +32,9 @@ public class SimpleVoteRewardsPlaceholders implements PlaceholderManager<EntityP
             case "vote_party":
                 return (SimpleVoteRewardsForge.getInstance().getConfig().getVotePartyRequired()
                         - SimpleVoteRewardsForge.getInstance().getVoteCounter()) + "";
+            case "vote_party_total" :
+                return SimpleVoteRewardsForge.getInstance().getConfig().getVotePartyRequired() + "";
+            case "votes" : return SimpleVoteRewardsForge.getInstance().getVoteCounter() + "";
         }
 
         return "UNDEFINED";
