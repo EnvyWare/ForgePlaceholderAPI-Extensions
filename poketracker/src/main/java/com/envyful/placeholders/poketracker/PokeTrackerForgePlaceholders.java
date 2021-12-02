@@ -72,6 +72,10 @@ public class PokeTrackerForgePlaceholders implements PlaceholderManager<EntityPl
                     return "Caught";
                 }
 
+                if (entityData.getCatcher() != null) {
+                    return "Defeated";
+                }
+
                 if (entityData.getEntity() == null) {
                     return "Despawned";
                 }
