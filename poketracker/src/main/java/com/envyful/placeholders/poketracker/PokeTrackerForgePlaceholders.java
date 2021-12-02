@@ -1,7 +1,5 @@
 package com.envyful.placeholders.poketracker;
 
-import com.envyful.api.time.UtilTimeFormat;
-import com.envyful.api.type.UtilParse;
 import com.envyful.papi.api.PlaceholderManager;
 import com.envyful.poke.tracker.forge.tracker.PokeTrackerFactory;
 import com.envyful.poke.tracker.forge.tracker.data.EntityData;
@@ -72,7 +70,7 @@ public class PokeTrackerForgePlaceholders implements PlaceholderManager<EntityPl
                     return "Caught";
                 }
 
-                if (entityData.getCatcher() != null) {
+                if (entityData.getCatcher() != null && !entityData.getCatcher().isEmpty()) {
                     return "Defeated";
                 }
 
