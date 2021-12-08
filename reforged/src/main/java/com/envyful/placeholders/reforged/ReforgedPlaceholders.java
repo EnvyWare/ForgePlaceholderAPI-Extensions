@@ -206,7 +206,8 @@ public class ReforgedPlaceholders implements PlaceholderManager<EntityPlayerMP> 
                 case "stats_evs_spa" : return pokemon.getEVs().get(StatsType.SpecialAttack) + "";
                 case "stats_evs_spd" : return pokemon.getEVs().get(StatsType.SpecialDefence) + "";
                 case "stats_evs_spe" : return pokemon.getEVs().get(StatsType.Speed) + "";
-
+                case "originaltrainer_uuid" : return pokemon.getOriginalTrainerUUID() + "";
+                case "originaltrainer_name" : return pokemon.getOriginalTrainer();
             }
         }
 
