@@ -1,2 +1,0 @@
-com/envyful/placeholders/forge/ForgePlaceholders.java
- com.envyful.placeholders.forge.ForgePlaceholders
