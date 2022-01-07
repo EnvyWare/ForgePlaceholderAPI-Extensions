@@ -2,9 +2,9 @@ package com.envyful.placeholders.forge;
 
 import com.envyful.papi.api.manager.AbstractPlaceholderManager;
 import com.envyful.placeholders.forge.extensions.*;
-import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.player.ServerPlayerEntity;
 
-public class ForgePlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
+public class ForgePlaceholders extends AbstractPlaceholderManager<ServerPlayerEntity> {
 
     private static final String IDENTIFIER = "forge";
     private static final String[] AUTHORS = new String[] { "Envyful" };
