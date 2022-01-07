@@ -1,58 +1,31 @@
 package com.envyful.placeholders.forge;
 
-import com.envyful.papi.api.PlaceholderManager;
+import com.envyful.papi.api.manager.AbstractPlaceholderManager;
+import com.envyful.placeholders.forge.extensions.*;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 
-public class ForgePlaceholders implements PlaceholderManager<EntityPlayerMP> {
+public class ForgePlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
 
-    @Override
-    public String getIdentifier() {
-        return "forge";
-    }
+    private static final String IDENTIFIER = "forge";
+    private static final String[] AUTHORS = new String[] { "Envyful" };
+    private static final String VERSION = "2.0.0";
+    private static final String NAME = "forge";
 
-    @Override
-    public String[] getAuthors() {
-        return new String[] { "Envyful" };
-    }
+    public ForgePlaceholders() {
+        super(IDENTIFIER, AUTHORS, VERSION, NAME);
 
-    @Override
-    public String getVersion() {
-        return "1.0.0";
-    }
-
-    @Override
-    public String getName() {
-        return getIdentifier();
+        this.registerPlaceholder(new NameExtension());
+        this.registerPlaceholder(new DisplayNameExtension());
+        this.registerPlaceholder(new HealthExtension());
+        this.registerPlaceholder(new FoodExtension());
+        this.registerPlaceholder(new OnlineExtension());
+        this.registerPlaceholder(new MaxOnlineExtension());
+        this.registerPlaceholder(new TPSExtension());
+        this.registerPlaceholder(new PingExtension());
     }
 
     @Override
     public String onPlaceholderRequest(EntityPlayerMP player, String placeholder) {
-        switch (placeholder.toLowerCase()) {
-            case "name" : return player.getName();
-            case "displayname" : return player.getDisplayNameString();
-            case "health" : return player.getHealth() + "";
-            case "food" : return player.getFoodStats().getFoodLevel() + "";
-            case "online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getPlayers().size() + "";
-            case "max_online" : return FMLCommonHandler.instance().getMinecraftServerInstance().getMaxPlayers() + "";
-            case "tps" : {
-                double meanTickTime = mean(FMLCommonHandler.instance().getMinecraftServerInstance().tickTimeArray) * 1.0E-6D;
-                double meanTPS = Math.min(1000.0/meanTickTime, 20);
-                return meanTPS + "";
-            }
-            case "ping" : return player.ping + "";
-        }
-
-        return "UNDEFINED";
-    }
-
-    private static long mean(long[] values)
-    {
-        long sum = 0L;
-        for (long v : values)
-        {
-            sum += v;
-        }
-        return sum / values.length;
+        return super.onPlaceholderRequest(player, placeholder);
     }
 }
