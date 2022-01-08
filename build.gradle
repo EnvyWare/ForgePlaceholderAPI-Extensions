@@ -24,7 +24,7 @@ subprojects {
     }
 
     dependencies {
-        compileOnly 'com.github.Pixelmon-Development.ForgePlaceholderAPI:api:2.0.0'
+        compileOnly 'com.github.Daniel-Forge-Development.ForgePlaceholderAPI:api:2.0.1'
     }
 
     task wrapper(type: Wrapper) {

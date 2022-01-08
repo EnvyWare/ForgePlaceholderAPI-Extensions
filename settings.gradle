@@ -7,6 +7,7 @@ include 'forge',
         'simplevoterewards',
         'cmi',
         'economiesforge',
+        'economiesforge16',
         'ultimatepokebuilder',
         'poketracker'
 

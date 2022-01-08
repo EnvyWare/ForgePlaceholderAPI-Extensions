@@ -11,6 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'com.github.Pixelmon-Development.API', name: 'commons', version: '0.3.6'
+    implementation group: 'com.github.Daniel-Forge-Development.API', name: 'commons', version: '0.3.6'
     implementation 'com.github.Pixelmon-Development:SimpleVoteRewards:0.4.0'
 }
