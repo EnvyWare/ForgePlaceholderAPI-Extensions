@@ -4,14 +4,13 @@ import com.envyful.economies.api.Economy;
 import com.envyful.economies.forge.EconomiesForge;
 import com.envyful.economies.forge.player.EconomiesAttribute;
 import com.envyful.economies.forge.shade.envy.api.forge.player.ForgeEnvyPlayer;
-import com.envyful.papi.api.manager.extensions.PlaceholderExtension;
 import com.envyful.placeholders.economies.extensions.AbstractEconomiesExtension;
 import com.google.common.collect.Lists;
 import net.minecraft.entity.player.ServerPlayerEntity;
 
 import java.util.List;
 
-public class BalanceExtension extends AbstractEconomiesExtension implements PlaceholderExtension<ServerPlayerEntity> {
+public class BalanceExtension extends AbstractEconomiesExtension {
 
     private static final String NAME = "balance";
     private static final int PRIORITY = 1;

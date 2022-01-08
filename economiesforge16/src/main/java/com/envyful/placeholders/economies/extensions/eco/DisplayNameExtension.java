@@ -1,6 +1,9 @@
 package com.envyful.placeholders.economies.extensions.eco;
 
 import com.envyful.economies.api.Economy;
+import com.envyful.economies.forge.EconomiesForge;
+import com.envyful.economies.forge.player.EconomiesAttribute;
+import com.envyful.economies.forge.shade.envy.api.forge.player.ForgeEnvyPlayer;
 import com.envyful.placeholders.economies.extensions.AbstractEconomiesExtension;
 import com.google.common.collect.Lists;
 import net.minecraft.entity.player.ServerPlayerEntity;

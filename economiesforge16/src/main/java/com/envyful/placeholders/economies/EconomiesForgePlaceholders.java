@@ -3,6 +3,7 @@ package com.envyful.placeholders.economies;
 import com.envyful.papi.api.manager.AbstractPlaceholderManager;
 import com.envyful.placeholders.economies.extensions.eco.*;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
 
 public class EconomiesForgePlaceholders extends AbstractPlaceholderManager<ServerPlayerEntity> {
 
