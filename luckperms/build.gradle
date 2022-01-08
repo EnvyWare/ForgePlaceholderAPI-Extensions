@@ -1,3 +1,11 @@
+apply plugin: 'net.minecraftforge.gradle'
+
+minecraftVersion = "1.12.2"
+
+minecraft {
+    mappings channel: 'snapshot', version: '20180814-1.12'
+}
+
 jar {
     archiveName = "LuckPermsPlaceholders.jar"
 }
@@ -7,5 +15,7 @@ repositories {
 }
 
 dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+
     compileOnly("net.luckperms:api:5.3")
 }

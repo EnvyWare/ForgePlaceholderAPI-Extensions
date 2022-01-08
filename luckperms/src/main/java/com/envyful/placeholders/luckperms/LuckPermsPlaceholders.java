@@ -1,59 +1,21 @@
 package com.envyful.placeholders.luckperms;
 
-import com.envyful.papi.api.PlaceholderManager;
-import net.luckperms.api.LuckPerms;
-import net.luckperms.api.LuckPermsProvider;
-import net.luckperms.api.model.user.User;
+import com.envyful.papi.api.manager.AbstractPlaceholderManager;
+import com.envyful.placeholders.luckperms.extension.PrefixExtension;
+import com.envyful.placeholders.luckperms.extension.SuffixExtension;
 import net.minecraft.entity.player.EntityPlayerMP;
 
-public class LuckPermsPlaceholders implements PlaceholderManager<EntityPlayerMP> {
+public class LuckPermsPlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
 
-    @Override
-    public String getIdentifier() {
-        return "luckperms";
-    }
+    private static final String IDENTIFIER = "forge";
+    private static final String[] AUTHORS = new String[] { "Envyful" };
+    private static final String VERSION = "2.0.0";
+    private static final String NAME = "forge";
 
-    @Override
-    public String[] getAuthors() {
-        return new String[] { "Envyful" };
-    }
+    public LuckPermsPlaceholders() {
+        super(IDENTIFIER, AUTHORS, VERSION, NAME);
 
-    @Override
-    public String getVersion() {
-        return "1.0.0";
-    }
-
-    @Override
-    public String getName() {
-        return getIdentifier();
-    }
-
-    @Override
-    public String onPlaceholderRequest(EntityPlayerMP player, String placeholder) {
-        LuckPerms luckPerms = LuckPermsProvider.get();
-        User user = luckPerms.getUserManager().getUser(player.getUniqueID());
-
-        switch(placeholder.toLowerCase()) {
-            case "prefix" : {
-                String prefix = user.getCachedData().getMetaData().getPrefix();
-
-                if (prefix == null) {
-                    return "";
-                }
-
-                return prefix;
-            }
-            case "suffix" : {
-                String suffix = user.getCachedData().getMetaData().getSuffix();
-
-                if (suffix == null) {
-                    return "";
-                }
-
-                return suffix;
-            }
-        }
-
-        return "UNDEFINED";
+        this.registerPlaceholder(new PrefixExtension());
+        this.registerPlaceholder(new SuffixExtension());
     }
 }
