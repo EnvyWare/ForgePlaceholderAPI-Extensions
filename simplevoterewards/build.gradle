@@ -1,3 +1,11 @@
+apply plugin: 'net.minecraftforge.gradle'
+
+minecraftVersion = "1.12.2"
+
+minecraft {
+    mappings channel: 'snapshot', version: '20180814-1.12'
+}
+
 jar {
     archiveName = "SimpleVoteRewardsPlaceholders.jar"
 }
@@ -11,6 +19,8 @@ repositories {
 }
 
 dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+
     implementation group: 'com.github.Daniel-Forge-Development.API', name: 'commons', version: '0.3.6'
     implementation 'com.github.Pixelmon-Development:SimpleVoteRewards:0.4.0'
 }

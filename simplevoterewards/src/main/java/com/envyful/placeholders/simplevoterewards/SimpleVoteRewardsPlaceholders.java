@@ -1,42 +1,23 @@
 package com.envyful.placeholders.simplevoterewards;
 
-import com.envyful.papi.api.PlaceholderManager;
-import com.envyful.simple.vote.rewards.forge.SimpleVoteRewardsForge;
+import com.envyful.papi.api.manager.AbstractPlaceholderManager;
+import com.envyful.placeholders.simplevoterewards.extension.VotePartyExtension;
+import com.envyful.placeholders.simplevoterewards.extension.VotePartyTotalExtension;
+import com.envyful.placeholders.simplevoterewards.extension.VotesExtension;
 import net.minecraft.entity.player.EntityPlayerMP;
 
-public class SimpleVoteRewardsPlaceholders implements PlaceholderManager<EntityPlayerMP> {
+public class SimpleVoteRewardsPlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
 
-    @Override
-    public String getIdentifier() {
-        return "simplevoterewards";
-    }
+    private static final String IDENTIFIER = "simplevoterewards";
+    private static final String[] AUTHORS = new String[] { "Envyful" };
+    private static final String VERSION = "2.0.0";
+    private static final String NAME = "simplevoterewards";
 
-    @Override
-    public String[] getAuthors() {
-        return new String[] { "Envyful" };
-    }
+    public SimpleVoteRewardsPlaceholders() {
+        super(IDENTIFIER, AUTHORS, VERSION, NAME);
 
-    @Override
-    public String getVersion() {
-        return "1.0.0";
-    }
-
-    @Override
-    public String getName() {
-        return getIdentifier();
-    }
-
-    @Override
-    public String onPlaceholderRequest(EntityPlayerMP player, String placeholder) {
-        switch (placeholder.toLowerCase()) {
-            case "vote_party":
-                return (SimpleVoteRewardsForge.getInstance().getConfig().getVotePartyRequired()
-                        - SimpleVoteRewardsForge.getInstance().getVoteCounter()) + "";
-            case "vote_party_total" :
-                return SimpleVoteRewardsForge.getInstance().getConfig().getVotePartyRequired() + "";
-            case "votes" : return SimpleVoteRewardsForge.getInstance().getVoteCounter() + "";
-        }
-
-        return "UNDEFINED";
+        this.registerPlaceholder(new VotePartyExtension());
+        this.registerPlaceholder(new VotePartyTotalExtension());
+        this.registerPlaceholder(new VotesExtension());
     }
 }
