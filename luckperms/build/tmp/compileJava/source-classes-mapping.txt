@@ -1,2 +1,0 @@
-com/envyful/placeholders/luckperms/LuckPermsPlaceholders.java
- com.envyful.placeholders.luckperms.LuckPermsPlaceholders

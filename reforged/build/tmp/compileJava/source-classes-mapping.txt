@@ -1,2 +1,0 @@
-com/envyful/placeholders/reforged/ReforgedPlaceholders.java
- com.envyful.placeholders.reforged.ReforgedPlaceholders
