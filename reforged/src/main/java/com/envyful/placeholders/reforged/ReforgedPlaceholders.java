@@ -1,6 +1,7 @@
 package com.envyful.placeholders.reforged;
 
 import com.envyful.papi.api.PlaceholderManager;
+import com.envyful.papi.api.manager.AbstractPlaceholderManager;
 import com.google.common.collect.Lists;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
@@ -19,30 +20,19 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ReforgedPlaceholders implements PlaceholderManager<EntityPlayerMP> {
+public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
+
+    private static final String IDENTIFIER = "reforged";
+    private static final String[] AUTHORS = new String[] { "Envyful" };
+    private static final String VERSION = "2.0.0";
+    private static final String NAME = "reforged";
 
     private static final Pattern DEX_MATCHER = Pattern.compile(
             "(pokdex_)(([a-zA-Z0-9!@#$&()`.+,\\/\"-]+)?([0-9]+)?)(_)([a-zA-Z0-9!@#$&()`.+,\\/\"-_]+)"
     );
 
-    @Override
-    public String getIdentifier() {
-        return "reforged";
-    }
-
-    @Override
-    public String[] getAuthors() {
-        return new String[] { "Envyful" };
-    }
-
-    @Override
-    public String getVersion() {
-        return "1.0.0";
-    }
-
-    @Override
-    public String getName() {
-        return getIdentifier();
+    public ReforgedPlaceholders() {
+        super(IDENTIFIER, AUTHORS, VERSION, NAME);
     }
 
     @Override
