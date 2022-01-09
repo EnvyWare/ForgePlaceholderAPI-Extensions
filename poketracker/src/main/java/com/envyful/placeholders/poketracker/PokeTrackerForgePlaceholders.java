@@ -1,6 +1,10 @@
 package com.envyful.placeholders.poketracker;
 
-import com.envyful.papi.api.PlaceholderManager;
+import com.envyful.papi.api.manager.AbstractPlaceholderManager;
+import com.envyful.placeholders.poketracker.extension.tracker.CatcherExtension;
+import com.envyful.placeholders.poketracker.extension.tracker.PokemonNameExtension;
+import com.envyful.placeholders.poketracker.extension.tracker.StatusExtension;
+import com.envyful.placeholders.poketracker.extension.tracker.TimeExtension;
 import com.envyful.poke.tracker.forge.tracker.PokeTrackerFactory;
 import com.envyful.poke.tracker.forge.tracker.data.EntityData;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -10,83 +14,29 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class PokeTrackerForgePlaceholders implements PlaceholderManager<EntityPlayerMP> {
+public class PokeTrackerForgePlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> {
 
-    private static final DateFormat DATE_FORMATTER = new SimpleDateFormat("dd/MM/yyyy");
-    private static final long SECONDS_PER_MINUTE = 60;
-    private static final long MINUTES_PER_HOUR = 60;
-    private static final long SECONDS_PER_HOUR = SECONDS_PER_MINUTE * MINUTES_PER_HOUR;
-    private static final long SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
+    private static final String IDENTIFIER = "poketracker";
+    private static final String[] AUTHORS = new String[] { "Envyful" };
+    private static final String VERSION = "2.0.0";
+    private static final String NAME = "poketracker";
 
-    @Override
-    public String getIdentifier() {
-        return "poketracker";
+    public static final DateFormat DATE_FORMATTER = new SimpleDateFormat("dd/MM/yyyy");
+    public static final long SECONDS_PER_MINUTE = 60;
+    public static final long MINUTES_PER_HOUR = 60;
+    public static final long SECONDS_PER_HOUR = SECONDS_PER_MINUTE * MINUTES_PER_HOUR;
+    public static final long SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
+
+    public PokeTrackerForgePlaceholders() {
+        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+
+        this.registerPlaceholder(new CatcherExtension());
+        this.registerPlaceholder(new PokemonNameExtension());
+        this.registerPlaceholder(new StatusExtension());
+        this.registerPlaceholder(new TimeExtension());
     }
 
-    @Override
-    public String[] getAuthors() {
-        return new String[] { "Envyful" };
-    }
-
-    @Override
-    public String getVersion() {
-        return "1.0.0";
-    }
-
-    @Override
-    public String getName() {
-        return getIdentifier();
-    }
-
-    @Override
-    public String onPlaceholderRequest(EntityPlayerMP player, String placeholder) {
-        String[] args = placeholder.split("_");
-
-        if (args.length < 3) {
-            return "UNDEFINED";
-        }
-
-        List<EntityData> trackedEntities = PokeTrackerFactory.getTrackedEntities(args[1]);
-
-        if (trackedEntities == null) {
-            return "SETTING NOT FOUND";
-        }
-
-        int pos = this.parseInt(args[2]) - 1;
-
-        if (trackedEntities.size() <= pos) {
-            return "None";
-        }
-
-        EntityData entityData = trackedEntities.get(pos);
-
-        switch(args[0]) {
-            case "pokemon":
-                return entityData.getPokemonName();
-            case "time" :
-                return getFormattedDuration(System.currentTimeMillis() - entityData.getSpawnTime());
-            case "status" :
-                if (entityData.isCaught()) {
-                    return "Caught";
-                }
-
-                if (entityData.getCatcher() != null && !entityData.getCatcher().isEmpty()) {
-                    return "Defeated";
-                }
-
-                if (entityData.getEntity() == null) {
-                    return "Despawned";
-                }
-
-                return "Active";
-            case "catcher" :
-                return entityData.getCatcher();
-        }
-
-        return "UNDEFINED";
-    }
-
-    private int parseInt(String s) {
+    public static int parseInt(String s) {
         try {
             return Integer.parseInt(s);
         } catch (NumberFormatException e) {
@@ -94,7 +44,7 @@ public class PokeTrackerForgePlaceholders implements PlaceholderManager<EntityPl
         }
     }
 
-    public String getFormattedDuration(long playTime) {
+    public static String getFormattedDuration(long playTime) {
         long seconds = TimeUnit.SECONDS.convert(playTime, TimeUnit.MILLISECONDS);
 
         long daysPart = (seconds / SECONDS_PER_DAY);
