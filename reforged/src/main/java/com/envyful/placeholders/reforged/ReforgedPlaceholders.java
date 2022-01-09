@@ -80,5 +80,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlaye
         this.registerPlaceholder(new SeenCountExtension());
         this.registerPlaceholder(new WinLossRationExtension());
         this.registerPlaceholder(new WinsExtension());
+        this.registerPlaceholder(new PartyIsUltraBeastExtension());
+        this.registerPlaceholder(new PartyIsLegendaryExtension());
     }
 }
