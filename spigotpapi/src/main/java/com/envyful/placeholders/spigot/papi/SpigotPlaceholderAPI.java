@@ -8,7 +8,7 @@ public class SpigotPlaceholderAPI extends AbstractPlaceholderManager<EntityPlaye
 
     private static final String IDENTIFIER = "spigotpapi";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.0.0";
+    private static final String VERSION = "2.8.0";
     private static final String NAME = "spigotpapi";
 
     public SpigotPlaceholderAPI() {
