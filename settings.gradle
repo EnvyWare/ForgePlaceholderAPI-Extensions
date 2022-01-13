@@ -10,4 +10,5 @@ include 'forge',
         'economiesforge16',
         'ultimatepokebuilder',
         'poketracker',
-        'spigotpapi'
+        'spigotpapi',
+        'spigotpapi16'
