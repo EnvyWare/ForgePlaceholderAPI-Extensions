@@ -12,7 +12,7 @@ public class PartyNameExtension extends PartyReforgedExtension {
     private static final String NAME = "name";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's name in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_name%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_name%");
 
     public PartyNameExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

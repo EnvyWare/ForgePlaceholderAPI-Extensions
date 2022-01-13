@@ -12,7 +12,7 @@ public class PartyExpToLevelExtension extends PartyReforgedExtension {
     private static final String NAME = "exptolevelup";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's exp to next level in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_exptolevelup%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_exptolevelup%");
 
     public PartyExpToLevelExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

@@ -12,7 +12,7 @@ public class PartyOTNameExtension extends PartyReforgedExtension {
     private static final String NAME = "originaltrainer_name";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's OT name");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_originaltrainer_name%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_originaltrainer_name%");
 
     public PartyOTNameExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

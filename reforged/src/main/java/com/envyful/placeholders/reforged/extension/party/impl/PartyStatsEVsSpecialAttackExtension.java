@@ -13,7 +13,7 @@ public class PartyStatsEVsSpecialAttackExtension extends PartyReforgedExtension 
     private static final String NAME = "stats_evs_spa";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's special attack ev stat in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_stats_evs_spa%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_stats_evs_spa%");
 
     public PartyStatsEVsSpecialAttackExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

@@ -13,7 +13,7 @@ public class PartyStatsEVsDefenceExtension extends PartyReforgedExtension {
     private static final String NAME = "stats_evs_def";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's defence ev stat in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_stats_evs_def%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_stats_evs_def%");
 
     public PartyStatsEVsDefenceExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

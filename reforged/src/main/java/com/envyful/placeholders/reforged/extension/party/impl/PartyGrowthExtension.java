@@ -12,7 +12,7 @@ public class PartyGrowthExtension extends PartyReforgedExtension {
     private static final String NAME = "growth";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's growth in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_growth%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_growth%");
 
     public PartyGrowthExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

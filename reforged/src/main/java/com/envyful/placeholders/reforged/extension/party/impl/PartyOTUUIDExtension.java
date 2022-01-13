@@ -13,7 +13,7 @@ public class PartyOTUUIDExtension extends PartyReforgedExtension {
     private static final String NAME = "originaltrainer_uuid";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's OT uuid");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_originaltrainer_uuid%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_originaltrainer_uuid%");
 
     public PartyOTUUIDExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);

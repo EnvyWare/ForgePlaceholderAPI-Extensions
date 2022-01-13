@@ -12,7 +12,7 @@ public class PartyIsUltraBeastExtension extends PartyReforgedExtension {
     private static final String NAME = "is_ub";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets if the pokemon is ultrabeast");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_1_is_ub%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_is_ub%");
 
     public PartyIsUltraBeastExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);
