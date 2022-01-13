@@ -9,5 +9,5 @@ include 'forge',
         'economiesforge',
         'economiesforge16',
         'ultimatepokebuilder',
-        'poketracker'
-
+        'poketracker',
+        'spigotpapi'

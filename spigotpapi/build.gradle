@@ -1,0 +1,31 @@
+apply plugin: 'net.minecraftforge.gradle'
+
+minecraftVersion = "1.12.2"
+
+minecraft {
+    mappings channel: 'snapshot', version: '20180814-1.12'
+}
+
+jar {
+    archiveName = "SpigotPlaceholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+    flatDir {
+        dirs '../libs/'
+    }
+
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+
+    compileOnly("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
+    implementation group: 'com.github.Daniel-Forge-Development.API', name: 'commons', version: '0.4.9'
+    compileOnly ('papi:PlaceholderAPI-2.11.1:1.0')
+}
