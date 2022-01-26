@@ -20,6 +20,6 @@ public class PartyNicknameExtension extends PartyReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, Pokemon pokemon) {
-        return pokemon.getNickname();
+        return pokemon.getDisplayName();
     }
 }
