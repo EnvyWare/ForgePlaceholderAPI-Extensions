@@ -21,6 +21,10 @@ public class PartyStatsAttackExtension extends PartyReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, Pokemon pokemon) {
+        if (pokemon == null) {
+            return "N/A";
+        }
+
         return pokemon.getStats().get(StatsType.Attack) + "";
     }
 }

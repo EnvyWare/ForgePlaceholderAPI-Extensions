@@ -20,6 +20,10 @@ public class PartyAbilityExtension extends PartyReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, Pokemon pokemon) {
+        if (pokemon == null) {
+            return "N/A";
+        }
+
         return pokemon.getAbilityName();
     }
 }
