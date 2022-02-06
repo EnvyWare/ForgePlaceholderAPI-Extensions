@@ -31,11 +31,6 @@ public abstract class PartyReforgedExtension extends AbstractExtension<EntityPla
         }
 
         String remainingPlaceholder = data.substring(2);
-        Pokemon pokemon = party.get(slot);
-
-        if (pokemon == null) {
-            return false;
-        }
 
         return placeholder.startsWith("party_slot_") && remainingPlaceholder.equals(this.getName());
     }
@@ -58,11 +53,6 @@ public abstract class PartyReforgedExtension extends AbstractExtension<EntityPla
 
         PlayerPartyStorage party = Pixelmon.storageManager.getParty(player);
         Pokemon pokemon = party.get(slot);
-
-        if (pokemon == null) {
-            return null;
-        }
-
         return parse(player, placeholder, pokemon);
     }
 

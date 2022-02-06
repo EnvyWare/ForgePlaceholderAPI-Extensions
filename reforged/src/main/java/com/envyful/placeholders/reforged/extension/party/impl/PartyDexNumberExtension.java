@@ -20,6 +20,10 @@ public class PartyDexNumberExtension extends PartyReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, Pokemon pokemon) {
+        if (pokemon == null) {
+            return "0";
+        }
+
         return pokemon.getSpecies().getNationalPokedexInteger() + "";
     }
 }
