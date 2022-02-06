@@ -7,7 +7,7 @@ minecraft {
 }
 
 jar {
-    archiveName = "ForgeEconomies.jar"
+    archiveName = "ForgeEconomiesPlaceholders.jar"
 }
 
 repositories {
