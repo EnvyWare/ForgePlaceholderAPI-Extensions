@@ -22,6 +22,10 @@ public class SpeciesEvolutionsExtension extends MatcherReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "N/A";
+        }
+
         List<String> evolutions = Lists.newArrayList();
 
         evolutions.addAll(Arrays.asList(species.getBaseStats().preEvolutions));

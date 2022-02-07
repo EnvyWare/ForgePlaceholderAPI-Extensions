@@ -20,6 +20,10 @@ public class SpeciesSecondTypeExtension extends MatcherReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "N/A";
+        }
+
         if (species.getBaseStats().getType2() == null) {
             return null;
         }

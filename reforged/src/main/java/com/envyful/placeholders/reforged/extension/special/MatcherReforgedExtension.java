@@ -33,11 +33,6 @@ public abstract class MatcherReforgedExtension extends AbstractExtension<EntityP
     public String parse(EntityPlayerMP player, String placeholder) {
         Matcher matcher = DEX_MATCHER.matcher(placeholder);
         EnumSpecies species = this.getSpecies(matcher.group(1));
-
-        if (species == null) {
-            return null;
-        }
-
         return this.parse(player, placeholder, species);
     }
 

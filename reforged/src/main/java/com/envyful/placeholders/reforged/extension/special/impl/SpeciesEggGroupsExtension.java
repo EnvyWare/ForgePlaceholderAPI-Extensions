@@ -21,6 +21,10 @@ public class SpeciesEggGroupsExtension extends MatcherReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "N/A";
+        }
+
         EnumEggGroup[] eggGroups = species.getBaseStats().eggGroups;
         List<String> eggs = Lists.newArrayList();
 

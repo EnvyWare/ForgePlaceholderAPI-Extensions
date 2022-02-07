@@ -22,6 +22,10 @@ public class SpeciesPreEvolutionsExtension extends MatcherReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "N/A";
+        }
+
         return String.join(", ", Arrays.asList(species.getBaseStats().preEvolutions));
     }
 }

@@ -20,6 +20,10 @@ public class SpeciesNationalIdExtension extends MatcherReforgedExtension {
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "0";
+        }
+
         return species.getNationalPokedexNumber();
     }
 }

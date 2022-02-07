@@ -21,6 +21,10 @@ public class SpeciesBaseStatsSpecialAttackExtension extends MatcherReforgedExten
 
     @Override
     protected String parse(EntityPlayerMP player, String placeholder, EnumSpecies species) {
+        if (species == null) {
+            return "N/A";
+        }
+        
         return species.getBaseStats().get(StatsType.SpecialAttack) + "";
     }
 }
