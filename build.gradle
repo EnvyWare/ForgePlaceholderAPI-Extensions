@@ -24,7 +24,7 @@ subprojects {
     }
 
     dependencies {
-        compileOnly 'com.github.Daniel-Forge-Development.ForgePlaceholderAPI:api:2.0.1'
+        compileOnly 'com.github.EnvyWare.ForgePlaceholderAPI:api:2.0.4'
     }
 
     task wrapper(type: Wrapper) {

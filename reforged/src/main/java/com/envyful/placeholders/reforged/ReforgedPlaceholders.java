@@ -14,7 +14,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlaye
     private static final String NAME = "reforged";
 
     public ReforgedPlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new PartyBallExtension());
         this.registerPlaceholder(new PartyDexNumberExtension());

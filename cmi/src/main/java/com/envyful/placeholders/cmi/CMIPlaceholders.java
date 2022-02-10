@@ -15,7 +15,7 @@ public class CMIPlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> 
     private static final String NAME = "cmi";
 
     public CMIPlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new BalanceExtension());
         this.registerPlaceholder(new NextRankExtension());

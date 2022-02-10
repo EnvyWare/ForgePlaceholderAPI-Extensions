@@ -15,7 +15,7 @@ public class UltimatePokeBuilderForgePlaceholders extends AbstractPlaceholderMan
     private static final String NAME = "upb";
 
     public UltimatePokeBuilderForgePlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new BalanceExtension());
     }

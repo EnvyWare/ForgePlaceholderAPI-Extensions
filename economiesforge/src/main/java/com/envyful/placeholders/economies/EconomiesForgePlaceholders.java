@@ -12,7 +12,7 @@ public class EconomiesForgePlaceholders extends AbstractPlaceholderManager<Entit
     private static final String NAME = "forgeeconomies";
 
     public EconomiesForgePlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new BalanceExtension());
         this.registerPlaceholder(new BalanceFormattedExtension());

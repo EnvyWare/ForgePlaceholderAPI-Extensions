@@ -13,7 +13,7 @@ public class LuckPermsPlaceholders extends AbstractPlaceholderManager<EntityPlay
     private static final String NAME = "forge";
 
     public LuckPermsPlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new PrefixExtension());
         this.registerPlaceholder(new SuffixExtension());

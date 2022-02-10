@@ -12,7 +12,7 @@ public class SpigotPlaceholderAPI extends AbstractPlaceholderManager<EntityPlaye
     private static final String NAME = "spigotpapi";
 
     public SpigotPlaceholderAPI() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new SpigotPAPIExtension());
     }

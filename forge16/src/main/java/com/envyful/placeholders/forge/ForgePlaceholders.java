@@ -3,6 +3,7 @@ package com.envyful.placeholders.forge;
 import com.envyful.papi.api.manager.AbstractPlaceholderManager;
 import com.envyful.placeholders.forge.extensions.*;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import org.apache.logging.log4j.core.jmx.Server;
 
 public class ForgePlaceholders extends AbstractPlaceholderManager<ServerPlayerEntity> {
 
@@ -12,7 +13,7 @@ public class ForgePlaceholders extends AbstractPlaceholderManager<ServerPlayerEn
     private static final String NAME = "forge";
 
     public ForgePlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, ServerPlayerEntity.class);
 
         this.registerPlaceholder(new NameExtension());
         this.registerPlaceholder(new DisplayNameExtension());

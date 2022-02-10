@@ -14,7 +14,7 @@ public class SimpleVoteRewardsPlaceholders extends AbstractPlaceholderManager<En
     private static final String NAME = "simplevoterewards";
 
     public SimpleVoteRewardsPlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new VotePartyExtension());
         this.registerPlaceholder(new VotePartyTotalExtension());

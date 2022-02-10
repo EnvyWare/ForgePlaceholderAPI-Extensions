@@ -12,7 +12,7 @@ public class ForgePlaceholders extends AbstractPlaceholderManager<EntityPlayerMP
     private static final String NAME = "forge";
 
     public ForgePlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new NameExtension());
         this.registerPlaceholder(new DisplayNameExtension());

@@ -28,7 +28,7 @@ public class PokeTrackerForgePlaceholders extends AbstractPlaceholderManager<Ent
     public static final long SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
 
     public PokeTrackerForgePlaceholders() {
-        super(IDENTIFIER, AUTHORS, VERSION, NAME);
+        super(IDENTIFIER, AUTHORS, VERSION, NAME, EntityPlayerMP.class);
 
         this.registerPlaceholder(new CatcherExtension());
         this.registerPlaceholder(new PokemonNameExtension());
