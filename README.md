@@ -58,58 +58,60 @@ PokeTracker
 
 Reforged
 - Party Info - Change 1 to whatever party slot you want to display Information on
---   %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
---   %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
---   %reforged_party_slot_1_exp% - Gets the pokemon's exp in the given slot
---   %reforged_party_slot_1_exptolevelup% - Gets the pokemon's exp to next level in the given slot
---   %reforged_party_slot_1_form% - Gets the pokemon's form in the given slot
---   %reforged_party_slot_1_gender% - Gets the pokemon's gender in the given slot
---   %reforged_party_slot_1_growth% - Gets the pokemon's growth in the given slot
---   %reforged_party_slot_1_level% - Gets the pokemon's level in the given slot
---   %reforged_party_slot_1_name% - Gets the pokemon's name in the given slot
---   %reforged_party_slot_1_nature% - Gets the pokemon's nature in the given slot
---   %reforged_party_slot_1_nickname% - Gets the pokemon's nickname in the given slot
---   %reforged_party_slot_1_originaltrainer_name% - Gets the pokemon's OT name
---   %reforged_party_slot_1_originaltrainer_uuid% - Gets the pokemon's OT uuid
---   %reforged_party_slot_1_shiny% - Gets the pokemon's shiny status in the given slot
---   %reforged_party_slot_1_stats_evs_atk% - Gets the pokemon's attack ev stat in the given slot
---   %reforged_party_slot_1_stats_def% - Gets the pokemon's defence stat in the given slot
---   %reforged_party_slot_1_stats_evs_atk% - Gets the pokemon's attack ev stat in the given slot
---   %reforged_party_slot_1_stats_evs_def% - Gets the pokemon's defence ev stat in the given slot
---   %reforged_party_slot_1_stats_evs_hp% - Gets the pokemon's hp ev stat in the given slot
---   %reforged_party_slot_1_stats_evs_spa% - Gets the pokemon's special attack ev stat in the given slot
---   %reforged_party_slot_1_stats_evs_spd% - Gets the pokemon's special defence ev stat in the given slot
---   %reforged_party_slot_1_stats_evs_spe% - Gets the pokemon's speed ev stat in the given slot
---   %reforged_party_slot_1_stats_hp% - Gets the pokemon's hp stat in the given slot
---   %reforged_party_slot_1_stats_ivs_atk% - Gets the pokemon's attack iv stat in the given slot
---  %reforged_party_slot_1_stats_ivs_def% - Gets the pokemon's defence iv stat in the given slot
---   %reforged_party_slot_1_stats_ivs_hp% - Gets the pokemon's hp iv stat in the given slot
---   %reforged_party_slot_1_stats_ivs_spa% - Gets the pokemon's special attack iv stat in the given slot
---   %reforged_party_slot_1_stats_ivs_spd% - Gets the pokemon's special defence iv stat in the given slot
---   %reforged_party_slot_1_stats_ivs_spe% - Gets the pokemon's speed iv stat in the given slot
---   %reforged_party_slot_1_stats_ivs_totalpercentage% - Gets the pokemon's IV percentage in the given slot
---   %reforged_party_slot_1_stats_spa% - Gets the pokemon's special attack stat in the given slot
---   %reforged_party_slot_1_stats_spd% - Gets the pokemon's special defence stat in the given slot
---   %reforged_party_slot_1_stats_spe% - Gets the pokemon's speed stat in the given slot
+  - %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
+  - %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
+  - %reforged_party_slot_1_exp% - Gets the pokemon's exp in the given slot
+  - %reforged_party_slot_1_exptolevelup% - Gets the pokemon's exp to next level in the given slot
+  - %reforged_party_slot_1_form% - Gets the pokemon's form in the given slot
+  - %reforged_party_slot_1_gender% - Gets the pokemon's gender in the given slot
+  - %reforged_party_slot_1_growth% - Gets the pokemon's growth in the given slot
+  - %reforged_party_slot_1_level% - Gets the pokemon's level in the given slot
+  - %reforged_party_slot_1_name% - Gets the pokemon's name in the given slot
+  - %reforged_party_slot_1_nature% - Gets the pokemon's nature in the given slot
+  - %reforged_party_slot_1_nickname% - Gets the pokemon's nickname in the given slot
+  - %reforged_party_slot_1_originaltrainer_name% - Gets the pokemon's OT name
+  - %reforged_party_slot_1_originaltrainer_uuid% - Gets the pokemon's OT uuid
+  - %reforged_party_slot_1_shiny% - Gets the pokemon's shiny status in the given slot
+  - %reforged_party_slot_1_stats_evs_atk% - Gets the pokemon's attack ev stat in the given slot
+  - %reforged_party_slot_1_stats_def% - Gets the pokemon's defence stat in the given slot
+  - %reforged_party_slot_1_stats_evs_atk% - Gets the pokemon's attack ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_def% - Gets the pokemon's defence ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_hp% - Gets the pokemon's hp ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_spa% - Gets the pokemon's special attack ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_spd% - Gets the pokemon's special defence ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_spe% - Gets the pokemon's speed ev stat in the given slot
+  - %reforged_party_slot_1_stats_hp% - Gets the pokemon's hp stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_atk% - Gets the pokemon's attack iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_def% - Gets the pokemon's defence iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_hp% - Gets the pokemon's hp iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_spa% - Gets the pokemon's special attack iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_spd% - Gets the pokemon's special defence iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_spe% - Gets the pokemon's speed iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_totalpercentage% - Gets the pokemon's IV percentage in the given slot
+  - %reforged_party_slot_1_stats_spa% - Gets the pokemon's special attack stat in the given slot
+  - %reforged_party_slot_1_stats_spd% - Gets the pokemon's special defence stat in the given slot
+  - %reforged_party_slot_1_stats_spe% - Gets the pokemon's speed stat in the given slot
+  - %reforged_party_1_is_ub% - Gets if the pokemon is ultrabeast
+  - %reforged_party_1_is_legendary% - Gets if the pokemon is legendary
 - Species Info - Change bulbasaur to whatever Pokemon species you want.
---   %reforged_pokedex_bulbasaur_ability_1% - Gets the pokemon's first ability
---   %reforged_pokedex_bulbasaur_ability_2% - Gets the pokemon's second ability
---   %reforged_pokedex_bulbasaur_basestats_atk% - Gets the pokemon's base stats Attack
---   %reforged_pokedex_bulbasaur_basestats_def - Gets the pokemon's base stats Defence
---   %reforged_pokedex_bulbasaur_basestats_hp% - Gets the pokemon's base stats HP
---  %reforged_pokedex_bulbasaur_basestats_spa% - Gets the pokemon's base stats Special Attack
---   %reforged_pokedex_bulbasaur_basestats_spd - Gets the pokemon's base stats Special Defence
---   %reforged_pokedex_bulbasaur_basestats_spe% - Gets the pokemon's base stats Speed
---   %reforged_pokedex_bulbasaur_catchrate% - Gets the pokemon's catch rate
---   %reforged_pokedex_bulbasaur_egggroups% - Gets the pokemon's egg groups
---   %reforged_pokedex_bulbasaur_evolutions% - Gets the pokemon's evolutions
---   %reforged_pokedex_bulbasaur_type_1% - Gets the pokemon's first type
---   %reforged_pokedex_bulbasaur_ability_H% - Gets the pokemon's hidden ability
---   %reforged_pokedex_bulbasaur_name% - Gets the pokemon's name
---   %reforged_pokedex_bulbasaur_nationalid% - Gets the pokemon's dex number
---   %reforged_pokedex_bulbasaur_postevolutions% - Gets the pokemon's post evolutions
---   %reforged_pokedex_bulbasaur_preevolutions% - Gets the pokemon's pre evolutions
---   %reforged_pokedex_bulbasaur_type_2% - Gets the pokemon's second type
+  - %reforged_pokedex_bulbasaur_ability_1% - Gets the pokemon's first ability
+  - %reforged_pokedex_bulbasaur_ability_2% - Gets the pokemon's second ability
+  - %reforged_pokedex_bulbasaur_basestats_atk% - Gets the pokemon's base stats Attack
+  - %reforged_pokedex_bulbasaur_basestats_def - Gets the pokemon's base stats Defence
+  - %reforged_pokedex_bulbasaur_basestats_hp% - Gets the pokemon's base stats HP
+  - %reforged_pokedex_bulbasaur_basestats_spa% - Gets the pokemon's base stats Special Attack
+  - %reforged_pokedex_bulbasaur_basestats_spd - Gets the pokemon's base stats Special Defence
+  - %reforged_pokedex_bulbasaur_basestats_spe% - Gets the pokemon's base stats Speed
+  - %reforged_pokedex_bulbasaur_catchrate% - Gets the pokemon's catch rate
+  - %reforged_pokedex_bulbasaur_egggroups% - Gets the pokemon's egg groups
+  - %reforged_pokedex_bulbasaur_evolutions% - Gets the pokemon's evolutions
+  - %reforged_pokedex_bulbasaur_type_1% - Gets the pokemon's first type
+  - %reforged_pokedex_bulbasaur_ability_H% - Gets the pokemon's hidden ability
+  - %reforged_pokedex_bulbasaur_name% - Gets the pokemon's name
+  - %reforged_pokedex_bulbasaur_nationalid% - Gets the pokemon's dex number
+  - %reforged_pokedex_bulbasaur_postevolutions% - Gets the pokemon's post evolutions
+  - %reforged_pokedex_bulbasaur_preevolutions% - Gets the pokemon's pre evolutions
+  - %reforged_pokedex_bulbasaur_type_2% - Gets the pokemon's second type
 -   %reforged_average_level% - Gets the player's party's average level
 -   %reforged_balance% - Gets the player's balance
 -   %reforged_dex_count% - Gets the player's dex caught count
@@ -123,9 +125,7 @@ Reforged
 -   %reforged_seen_count% - Gets the player's dex seen count
 -   %reforged_wl_ratio% - Gets the player's win loss ratio
 -   %reforged_wins% - Gets the player's wins
--   %reforged_party_1_is_ub% - Gets if the pokemon is ultrabeast
--   %reforged_party_1_is_legendary% - Gets if the pokemon is legendary
-- %reforged_partysize% - Gets the number of Pokemon In a player's party
+-   %reforged_partysize% - Gets the number of Pokemon In a player's party
 
 SimpleVoteRewards
 -   %simplevoterewards_vote_party% - Current number of votes in the vote party (required - counter)
