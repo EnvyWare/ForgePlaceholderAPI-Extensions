@@ -11,7 +11,7 @@ public class UltimatePokeBuilderForgePlaceholders extends AbstractPlaceholderMan
 
     private static final String IDENTIFIER = "upb";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.8.3";
+    private static final String VERSION = "2.8.4";
     private static final String NAME = "upb";
 
     public UltimatePokeBuilderForgePlaceholders() {
