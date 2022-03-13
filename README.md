@@ -20,6 +20,8 @@ Extensions Available:
 Once you have downloaded the extensions you want, simply put them In `/mods/ForgePlaceholderAPI` and restart your server!
 
 # Extension Explanation
+This list may get out of date and is meant to serve as a general reference. For an up to date reference, head over to the [wiki](https://github.com/EnvyWare/ForgePlaceholderAPI-Extensions/wiki).
+
 CMI
 -   %cmi_balance% - Gets the player's balance
 -   %cmi_playtime% - Gets the player's playtime
