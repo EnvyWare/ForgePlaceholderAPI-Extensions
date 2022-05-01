@@ -3,6 +3,7 @@ package com.envyful.placeholders.reforged.extension;
 import com.envyful.papi.api.manager.extensions.type.SimpleExtension;
 import com.google.common.collect.Lists;
 import com.pixelmonmod.pixelmon.Pixelmon;
+import com.pixelmonmod.pixelmon.api.economy.IPixelmonBankAccount;
 import com.pixelmonmod.pixelmon.storage.PlayerPartyStorage;
 import net.minecraft.entity.player.EntityPlayerMP;
 
@@ -21,7 +22,6 @@ public class BalanceExtension extends SimpleExtension<EntityPlayerMP> {
 
     @Override
     public String parse(EntityPlayerMP player, String placeholder) {
-        PlayerPartyStorage party = Pixelmon.storageManager.getParty(player);
-        return party.getMoney() + "";
+        return Pixelmon.moneyManager.getBankAccount(player).map(IPixelmonBankAccount::getMoney).orElse(0) + "";
     }
 }
