@@ -11,7 +11,7 @@ public class CMIPlaceholders extends AbstractPlaceholderManager<EntityPlayerMP> 
 
     private static final String IDENTIFIER = "cmi";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.8.4";
+    private static final String VERSION = "2.8.5";
     private static final String NAME = "cmi";
 
     public CMIPlaceholders() {
