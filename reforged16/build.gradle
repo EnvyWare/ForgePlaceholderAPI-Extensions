@@ -1,0 +1,33 @@
+apply plugin: 'net.minecraftforge.gradle'
+
+minecraftVersion = "1.16.5"
+
+minecraft {
+    mappings channel: 'official', version: '1.16.5'
+}
+
+jar {
+    archiveName = "Reforged16Placeholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+
+    ivy {
+        setUrl('https://download.nodecdn.net/containers/reforged/server/release')
+        metadataSources {
+            artifact()
+        }
+        patternLayout {
+            artifact('[revision]/[artifact].[ext]')
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+
+    implementation 'pixelmon:Pixelmon-1.16.5-9.0.2-server:9.0.2'
+}
