@@ -7,7 +7,7 @@ minecraft {
 }
 
 jar {
-    archiveName = "Reforged16Placeholders.jar"
+    archiveName = "ReforgedPlaceholders.jar"
 }
 
 repositories {
