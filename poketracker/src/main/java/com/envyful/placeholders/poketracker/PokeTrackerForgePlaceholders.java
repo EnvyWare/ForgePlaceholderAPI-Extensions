@@ -18,7 +18,7 @@ public class PokeTrackerForgePlaceholders extends AbstractPlaceholderManager<Ent
 
     private static final String IDENTIFIER = "poketracker";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.0";
+    private static final String VERSION = "2.9.1";
     private static final String NAME = "poketracker";
 
     public static final DateFormat DATE_FORMATTER = new SimpleDateFormat("dd/MM/yyyy");
