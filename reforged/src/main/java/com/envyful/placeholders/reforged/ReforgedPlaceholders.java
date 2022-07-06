@@ -32,7 +32,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlaye
         this.registerPlaceholder(new PartyOTNameExtension());
         this.registerPlaceholder(new PartyOTUUIDExtension());
         this.registerPlaceholder(new PartyShinyExtension());
-        this.registerPlaceholder(new PartyStatsEVsAttackExtension());
+        this.registerPlaceholder(new PartyStatsAttackExtension());
         this.registerPlaceholder(new PartyStatsDefenceExtension());
         this.registerPlaceholder(new PartyStatsEVsAttackExtension());
         this.registerPlaceholder(new PartyStatsEVsDefenceExtension());
@@ -85,5 +85,17 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlaye
         this.registerPlaceholder(new WinsExtension());
         this.registerPlaceholder(new PartyIsUltraBeastExtension());
         this.registerPlaceholder(new PartyIsLegendaryExtension());
+        this.registerPlaceholder(new PartyDexFullNumberExtension());
+        this.registerPlaceholder(new PartyStatsEVsTotalPercentageExtension());
+        this.registerPlaceholder(new PartyStatsEVsTotalExtension());
+        this.registerPlaceholder(new PartyStatsIVsTotalExtension());
+        this.registerPlaceholder(new PartyMoveOneExtension());
+        this.registerPlaceholder(new PartyMoveTwoExtension());
+        this.registerPlaceholder(new PartyMoveThreeExtension());
+        this.registerPlaceholder(new PartyMoveFourExtension());
+        this.registerPlaceholder(new LegendaryAmountExtension());
+        this.registerPlaceholder(new ShinyAmountExtension());
+        this.registerPlaceholder(new UltrabeastAmountExtension());
+        this.registerPlaceholder(new RawDexPercentageExtension());
     }
 }
