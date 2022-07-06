@@ -1,4 +1,3 @@
-
 package com.envyful.placeholders.reforged.extension.party.impl;
 
 import com.envyful.placeholders.reforged.extension.party.PartyReforgedExtension;
@@ -8,23 +7,23 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 
 import java.util.List;
 
-public class PartyStatsIVsTotalPercentageExtension extends PartyReforgedExtension {
+public class PartyDexFullNumberExtension extends PartyReforgedExtension {
 
-    private static final String NAME = "stats_ivs_totalpercentage";
+    private static final String NAME = "dex_number_full";
     private static final int PRIORITY = 1;
-    private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's IV percentage in the given slot");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_stats_ivs_totalpercentage%");
+    private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's full dex number in the given slot");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_dex_number_full%");
 
-    public PartyStatsIVsTotalPercentageExtension() {
+    public PartyDexFullNumberExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);
     }
 
     @Override
     protected String parse(ServerPlayerEntity player, String placeholder, Pokemon pokemon) {
         if (pokemon == null) {
-            return "N/A";
+            return "000";
         }
 
-        return pokemon.getIVs().getPercentageString(2);
+        return pokemon.getSpecies().getFormattedDex();
     }
 }
