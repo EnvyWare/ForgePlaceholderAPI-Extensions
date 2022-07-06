@@ -23,13 +23,7 @@ public class PartyStatsEVsTotalExtension extends PartyReforgedExtension {
         if (pokemon == null) {
             return "N/A";
         }
-
-        int total = 0;
-
-        for (int i : pokemon.getEVs().getArray()) {
-            total+=i;
-        }
-
-        return total + "";
+		
+        return pokemon.getEVs().getTotal() + "";
     }
 }

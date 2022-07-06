@@ -29,13 +29,15 @@ public class UltrabeastAmountExtension extends SimpleExtension<EntityPlayerMP> {
         int ub = 0;
 
         for (Pokemon pokemon : party.getAll()) {
-            if (pokemon != null && pokemon.getSpecies().isUltraBeast())
+            if (pokemon != null && pokemon.getSpecies().isUltraBeast()) {
                 ub += 1;
+			}
         }
 
         for (Pokemon pokemon : pc.getAll()) {
-            if (pokemon != null && pokemon.getSpecies().isUltraBeast())
+            if (pokemon != null && pokemon.getSpecies().isUltraBeast()) {
                 ub += 1;
+			}
         }
 
         return ub + "";

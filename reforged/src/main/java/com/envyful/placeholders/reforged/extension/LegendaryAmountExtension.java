@@ -29,13 +29,15 @@ public class LegendaryAmountExtension extends SimpleExtension<EntityPlayerMP> {
         int leg = 0;
 
         for (Pokemon pokemon : party.getAll()) {
-            if (pokemon != null && pokemon.isLegendary())
+            if (pokemon != null && pokemon.isLegendary()) {
                 leg += 1;
+			}
         }
 
         for (Pokemon pokemon : pc.getAll()) {
-            if (pokemon != null && pokemon.isLegendary())
+            if (pokemon != null && pokemon.isLegendary()) {
                 leg += 1;
+			}
         }
 
         return leg + "";

@@ -29,13 +29,15 @@ public class ShinyAmountExtension extends SimpleExtension<ServerPlayerEntity> {
         int shiny = 0;
 
         for (Pokemon pokemon : party.getAll()) {
-            if (pokemon != null && pokemon.isShiny())
+            if (pokemon != null && pokemon.isShiny()) {
                 shiny += 1;
+			}
         }
 
         for (Pokemon pokemon : pc.getAll()) {
-            if (pokemon != null && pokemon.isShiny())
+            if (pokemon != null && pokemon.isShiny()) {
                 shiny += 1;
+			}
         }
 
         return shiny + "";

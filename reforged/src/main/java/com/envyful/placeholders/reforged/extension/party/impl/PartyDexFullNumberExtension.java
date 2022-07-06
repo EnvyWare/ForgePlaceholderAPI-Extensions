@@ -24,6 +24,6 @@ public class PartyDexFullNumberExtension extends PartyReforgedExtension {
             return "000";
         }
 
-        return pokemon.getSpecies().getNationalPokedexNumber() + "";
+        return pokemon.getSpecies().getNationalPokedexNumber();
     }
 }
