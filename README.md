@@ -60,12 +60,15 @@ Reforged
 - Party Info - Change 1 to whatever party slot you want to display Information on
   - %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
   - %reforged_party_slot_1_ability% - Gets the pokemon's ability in the given slot
+  - %reforged_party_slot_1_dex_number% - Gets the pokemon's dex number in the given slot
+  - %reforged_party_slot_1_dex_number_full% - Gets the pokemon's full dex number in the given slot
   - %reforged_party_slot_1_exp% - Gets the pokemon's exp in the given slot
   - %reforged_party_slot_1_exptolevelup% - Gets the pokemon's exp to next level in the given slot
   - %reforged_party_slot_1_form% - Gets the pokemon's form in the given slot
   - %reforged_party_slot_1_gender% - Gets the pokemon's gender in the given slot
   - %reforged_party_slot_1_growth% - Gets the pokemon's growth in the given slot
   - %reforged_party_slot_1_level% - Gets the pokemon's level in the given slot
+  - %reforged_party_slot_1_moveset_<1-4>% - Gets the pokemon's move in the given slot
   - %reforged_party_slot_1_name% - Gets the pokemon's name in the given slot
   - %reforged_party_slot_1_nature% - Gets the pokemon's nature in the given slot
   - %reforged_party_slot_1_nickname% - Gets the pokemon's nickname in the given slot
@@ -80,6 +83,8 @@ Reforged
   - %reforged_party_slot_1_stats_evs_spa% - Gets the pokemon's special attack ev stat in the given slot
   - %reforged_party_slot_1_stats_evs_spd% - Gets the pokemon's special defence ev stat in the given slot
   - %reforged_party_slot_1_stats_evs_spe% - Gets the pokemon's speed ev stat in the given slot
+  - %reforged_party_slot_1_stats_evs_total% - Gets the pokemon's total evs amount
+  - %reforged_party_slot_1_stats_evs_totalpercentage% - Gets the pokemon's total evs percentage
   - %reforged_party_slot_1_stats_hp% - Gets the pokemon's hp stat in the given slot
   - %reforged_party_slot_1_stats_ivs_atk% - Gets the pokemon's attack iv stat in the given slot
   - %reforged_party_slot_1_stats_ivs_def% - Gets the pokemon's defence iv stat in the given slot
@@ -87,6 +92,7 @@ Reforged
   - %reforged_party_slot_1_stats_ivs_spa% - Gets the pokemon's special attack iv stat in the given slot
   - %reforged_party_slot_1_stats_ivs_spd% - Gets the pokemon's special defence iv stat in the given slot
   - %reforged_party_slot_1_stats_ivs_spe% - Gets the pokemon's speed iv stat in the given slot
+  - %reforged_party_slot_1_stats_ivs_total% - Gets the pokemon's total ivs percentage
   - %reforged_party_slot_1_stats_ivs_totalpercentage% - Gets the pokemon's IV percentage in the given slot
   - %reforged_party_slot_1_stats_spa% - Gets the pokemon's special attack stat in the given slot
   - %reforged_party_slot_1_stats_spd% - Gets the pokemon's special defence stat in the given slot
@@ -119,10 +125,14 @@ Reforged
 -   %reforged_dexsizeall% - Gets the dex size
 -   %reforged_dexsize% - Gets the dex size excluding MissingNo
 -   %reforged_highest_level% - Gets the player's party's highest level
+-   %reforged_legendary_amount% - Gets the amount of legendary pokemon in the party and pc
 -   %reforged_losses% - Gets the player's losses
 -   %reforged_lowest_level% - Gets the player's party's lowest level
 -   %reforged_nextlegendary% - Gets the next legendary spawn time
--   %reforged_seen_count% - Gets the player's dex seen count
+-   %reforged_raw_dex_percentage% - Gets the player's dex completion percentage without the % symbol
+- %reforged_seen_count% - Gets the player's dex seen count
+-   %reforged_shiny_amount% - Gets the amount of shiny pokemon in the party and pc
+-   %reforged_ultrabeast_amount% - Gets the amount of ulbrabeast pokemon in the party and pc
 -   %reforged_wl_ratio% - Gets the player's win loss ratio
 -   %reforged_wins% - Gets the player's wins
 -   %reforged_partysize% - Gets the number of Pokemon In a player's party
