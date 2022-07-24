@@ -84,6 +84,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
         this.registerPlaceholder(new SeenCountExtension());
         this.registerPlaceholder(new WinLossRationExtension());
         this.registerPlaceholder(new WinsExtension());
+        this.registerPlaceholder(new PartyStatsEVsTotalPercentageExtension());
         this.registerPlaceholder(new PartyNBTExtension());
         this.registerPlaceholder(new PartyIsUltraBeastExtension());
         this.registerPlaceholder(new PartyIsLegendaryExtension());
