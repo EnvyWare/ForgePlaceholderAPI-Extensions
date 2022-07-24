@@ -32,7 +32,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
         this.registerPlaceholder(new PartyOTNameExtension());
         this.registerPlaceholder(new PartyOTUUIDExtension());
         this.registerPlaceholder(new PartyShinyExtension());
-        this.registerPlaceholder(new PartyStatsEVsAttackExtension());
+        this.registerPlaceholder(new PartyStatsAttackExtension());
         this.registerPlaceholder(new PartyStatsDefenceExtension());
         this.registerPlaceholder(new PartyStatsEVsAttackExtension());
         this.registerPlaceholder(new PartyStatsEVsDefenceExtension());
@@ -73,6 +73,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
         this.registerPlaceholder(new BalanceExtension());
         this.registerPlaceholder(new DexCountExtension());
         this.registerPlaceholder(new DexPercentageExtension());
+        this.registerPlaceholder(new DexPercentageUnformattedExtension());
         this.registerPlaceholder(new DexSizeAllExtension());
         this.registerPlaceholder(new DexSizeExtension());
         this.registerPlaceholder(new HighestLevelExtension());

@@ -27,6 +27,6 @@ public class WinLossRationExtension extends SimpleExtension<ServerPlayerEntity> 
             return "0";
         }
 
-        return String.format("%.2f", ((party.stats.getWins() + 0.000) / party.stats.getLosses()) * 100);
+        return String.format("%.2f", ((party.stats.getWins() + 0.000) / party.stats.getLosses()));
     }
 }

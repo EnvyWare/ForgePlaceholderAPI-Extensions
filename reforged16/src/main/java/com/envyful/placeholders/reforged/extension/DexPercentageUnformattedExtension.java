@@ -9,14 +9,14 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 
 import java.util.List;
 
-public class DexPercentageExtension extends SimpleExtension<ServerPlayerEntity> {
+public class DexPercentageUnformattedExtension extends SimpleExtension<ServerPlayerEntity> {
 
-    private static final String NAME = "dex_percentage";
+    private static final String NAME = "dex_perecentage_unformatted";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the player's dex completion percentage");
-    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_dex_percentage%");
+    private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_dex_perecentage_unformatted%");
 
-    public DexPercentageExtension() {
+    public DexPercentageUnformattedExtension() {
         super(NAME, PRIORITY, DESCRIPTION, EXAMPLES);
     }
 
@@ -27,6 +27,6 @@ public class DexPercentageExtension extends SimpleExtension<ServerPlayerEntity> 
         return String.format(
                 "%.2f",
                 ((party.playerPokedex.countCaught() + 0.000) / Pokedex.pokedexSize) * 100
-        ) + "%";
+        );
     }
 }

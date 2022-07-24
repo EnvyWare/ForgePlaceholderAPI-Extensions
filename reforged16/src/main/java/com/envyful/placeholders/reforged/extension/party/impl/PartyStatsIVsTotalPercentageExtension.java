@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PartyStatsIVsTotalPercentageExtension extends PartyReforgedExtension {
 
-    private static final String NAME = "stats_ivs_spe";
+    private static final String NAME = "stats_ivs_totalpercentage";
     private static final int PRIORITY = 1;
     private static final List<String> DESCRIPTION = Lists.newArrayList("Gets the pokemon's IV percentage in the given slot");
     private static final List<String> EXAMPLES = Lists.newArrayList("%reforged_party_slot_1_stats_ivs_totalpercentage%");
