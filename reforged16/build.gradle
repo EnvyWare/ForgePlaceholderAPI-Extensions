@@ -29,5 +29,5 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
 
-    implementation 'pixelmon:Pixelmon-1.16.5-9.0.2-server:9.0.2'
+    implementation 'pixelmon:Pixelmon-1.16.5-9.0.6-server:9.0.6'
 }
