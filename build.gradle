@@ -35,6 +35,9 @@ subprojects {
     version = '2.9.2'
 
     task versionedRelease(type: Copy) {
+        delete fileTree('../release/') {
+            include '**/*.jar'
+        }
         group "build"
         from('./build/libs/')
         into('../release/')
