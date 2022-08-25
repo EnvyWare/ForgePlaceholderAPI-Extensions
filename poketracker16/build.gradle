@@ -1,0 +1,29 @@
+apply plugin: 'net.minecraftforge.gradle'
+
+minecraftVersion = "1.16.5"
+
+minecraft {
+    mappings channel: 'official', version: '1.16.5'
+}
+
+jar {
+    archiveName = "PokeTrackerPlaceholders.jar"
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+    flatDir {
+        dirs '../libs/'
+    }
+
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+
+    implementation group: 'com.github.EnvyWare.API', name: 'commons', version: '3.2.0'
+    compileOnly 'com.envyful.poke.tracker.forge:PokeTracker-Forge-1.0.1-1.16.5:1.0'
+}

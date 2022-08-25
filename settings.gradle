@@ -12,4 +12,5 @@ include 'forge',
         'ultimatepokebuilder',
         'poketracker',
         'spigotpapi',
-        'spigotpapi16'
+        'spigotpapi16',
+        'poketracker16'
