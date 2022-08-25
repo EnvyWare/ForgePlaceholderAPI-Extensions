@@ -9,7 +9,7 @@ public class EconomiesForgePlaceholders extends AbstractPlaceholderManager<Serve
 
     private static final String IDENTIFIER = "forgeeconomies";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.2";
+    private static final String VERSION = "2.9.3";
     private static final String NAME = "forgeeconomies";
 
     public EconomiesForgePlaceholders() {

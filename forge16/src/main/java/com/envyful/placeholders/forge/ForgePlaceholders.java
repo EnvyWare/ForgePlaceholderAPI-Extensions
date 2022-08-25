@@ -9,7 +9,7 @@ public class ForgePlaceholders extends AbstractPlaceholderManager<ServerPlayerEn
 
     private static final String IDENTIFIER = "forge";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.2";
+    private static final String VERSION = "2.9.3";
     private static final String NAME = "forge";
 
     public ForgePlaceholders() {
