@@ -10,7 +10,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<EntityPlaye
 
     private static final String IDENTIFIER = "reforged";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.4";
+    private static final String VERSION = "2.9.5";
     private static final String NAME = "reforged";
 
     public ReforgedPlaceholders() {

@@ -10,7 +10,7 @@ public class WonderTradeForgePlaceholders extends AbstractPlaceholderManager<Ser
 
     private static final String IDENTIFIER = "wondertrade";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.4";
+    private static final String VERSION = "2.9.5";
     private static final String NAME = "wondertrade";
 
     public WonderTradeForgePlaceholders() {
