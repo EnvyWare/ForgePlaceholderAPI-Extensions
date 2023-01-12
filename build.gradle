@@ -17,6 +17,7 @@ subprojects {
 
     repositories {
         maven { url 'https://jitpack.io' }
+        maven { url "https://maven.envyware.co.uk/releases" }
     }
 
     ext {

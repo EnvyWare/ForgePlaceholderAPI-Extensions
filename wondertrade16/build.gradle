@@ -34,7 +34,7 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.22'
 
-    implementation group: 'com.github.EnvyWare.API', name: 'commons', version: '3.2.0'
-    implementation 'pixelmon:Pixelmon-1.16.5-9.0.7-server:9.0.7'
+    implementation group: 'com.envyful.api', name: 'commons', version: '4.0.4'
+    implementation 'pixelmon:Pixelmon-1.16.5-9.1.0-server:9.1.0'
     compileOnly 'com.envyful.economies.forge:WonderTrade-Forge-6.0.9-1.16.5:1.0'
 }
