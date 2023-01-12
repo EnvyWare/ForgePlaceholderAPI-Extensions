@@ -2,7 +2,7 @@ package com.envyful.placeholders.reforged.extension.special.impl;
 
 import com.envyful.placeholders.reforged.extension.special.MatcherReforgedExtension;
 import com.google.common.collect.Lists;
-import com.pixelmonmod.pixelmon.api.pokemon.EggGroup;
+import com.pixelmonmod.pixelmon.api.pokemon.egg.EggGroup;
 import com.pixelmonmod.pixelmon.api.pokemon.species.Species;
 import net.minecraft.entity.player.ServerPlayerEntity;
 
@@ -29,7 +29,7 @@ public class SpeciesEggGroupsExtension extends MatcherReforgedExtension {
         List<String> eggs = Lists.newArrayList();
 
         for (EggGroup eggGroup : eggGroups) {
-            eggs.add(eggGroup.name());
+            eggs.add(eggGroup.getLocalizedName());
         }
 
         return String.join(", ", eggs);
