@@ -25,5 +25,5 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.22'
 
     implementation group: 'com.envyful.api', name: 'commons', version: '4.0.4'
-    compileOnly 'com.envyful.economies.forge:UltimatePokeBuilder-Forge-2.0.2-1.16.5:1.0'
+    compileOnly 'com.envyful.economies.forge:UltimatePokeBuilder-Forge-2.1.6-1.16.5:1.0'
 }
