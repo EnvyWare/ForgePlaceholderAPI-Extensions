@@ -7,7 +7,7 @@ minecraft {
 }
 
 jar {
-    archiveName = "UltimatePokeBuilderPlaceholders.jar"
+    archiveName = "WonderTradePlaceholders.jar"
 }
 
 repositories {
