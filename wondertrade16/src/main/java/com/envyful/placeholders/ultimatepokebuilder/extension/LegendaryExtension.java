@@ -21,7 +21,7 @@ public class LegendaryExtension extends AbstractExtension<ServerPlayerEntity> {
 
     @Override
     public boolean matches(ServerPlayerEntity player, String placeholder) {
-        return true;
+        return placeholder.equalsIgnoreCase(this.getName());
     }
 
     @Override
@@ -33,6 +33,6 @@ public class LegendaryExtension extends AbstractExtension<ServerPlayerEntity> {
             }
         }
 
-        return legendaries + "";
+        return String.valueOf(legendaries);
     }
 }

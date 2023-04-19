@@ -21,7 +21,7 @@ public class ShinyExtension extends AbstractExtension<ServerPlayerEntity> {
 
     @Override
     public boolean matches(ServerPlayerEntity player, String placeholder) {
-        return true;
+        return placeholder.equalsIgnoreCase(this.getName());
     }
 
     @Override
