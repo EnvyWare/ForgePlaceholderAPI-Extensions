@@ -1,6 +1,8 @@
 package com.envyful.placeholders.poketracker.extension.tracker;
 
+import com.envyful.placeholders.poketracker.PokeTrackerForgePlaceholders;
 import com.envyful.placeholders.poketracker.extension.PokeTrackerExtension;
+import com.envyful.poke.tracker.forge.PokeTrackerForge;
 import com.envyful.poke.tracker.forge.tracker.data.EntityData;
 import com.google.common.collect.Lists;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -21,17 +23,17 @@ public class StatusExtension extends PokeTrackerExtension {
     @Override
     public String parse(ServerPlayerEntity player, String placeholder, EntityData entityData) {
         if (entityData.isCaught()) {
-            return "Caught";
+            return PokeTrackerForge.getInstance().getConfig().getCaughtText();
         }
 
         if (entityData.getCatcher() != null && !entityData.getCatcher().isEmpty()) {
-            return "Defeated";
+            return PokeTrackerForge.getInstance().getConfig().getDefeatedText();
         }
 
         if (entityData.getEntity() == null) {
-            return "Despawned";
+            return PokeTrackerForge.getInstance().getConfig().getDespawnedText();
         }
 
-        return "Active";
+        return PokeTrackerForge.getInstance().getConfig().getActiveText();
     }
 }
