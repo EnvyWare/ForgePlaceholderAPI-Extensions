@@ -33,7 +33,7 @@ subprojects {
         jarFile("../gradle/wrapper/gradle-wrapper.jar")
     }
 
-    version = '2.9.9'
+    version = '3.0.0'
 
     task versionedRelease(type: Copy) {
         delete fileTree('../release/') {

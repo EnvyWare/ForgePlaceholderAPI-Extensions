@@ -9,7 +9,7 @@ public class LuckPermsPlaceholders extends AbstractPlaceholderManager<EntityPlay
 
     private static final String IDENTIFIER = "forge";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "2.9.9";
+    private static final String VERSION = "3.0.0";
     private static final String NAME = "forge";
 
     public LuckPermsPlaceholders() {
