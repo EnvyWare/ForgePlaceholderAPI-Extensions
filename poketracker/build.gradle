@@ -24,6 +24,6 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
-    implementation group: 'com.envyful.api', name: 'commons', version: '4.2.0'
+    implementation group: 'com.envyful.api', name: 'commons', version: '4.8.1'
     compileOnly 'com.envyful.poke.tracker.forge:PokeTracker-Forge:1.0'
 }

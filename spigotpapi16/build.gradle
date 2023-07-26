@@ -26,6 +26,6 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.22'
 
     compileOnly("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
-    implementation group: 'com.envyful.api', name: 'commons', version: '4.2.0'
+    implementation group: 'com.envyful.api', name: 'commons', version: '4.8.1'
     compileOnly ('papi:PlaceholderAPI-2.11.1:1.0')
 }
