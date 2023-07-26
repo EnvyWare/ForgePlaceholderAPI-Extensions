@@ -22,7 +22,6 @@ public abstract class PartyReforgedExtension extends AbstractExtension<ServerPla
             return false;
         }
 
-        PlayerPartyStorage party = StorageProxy.getParty(player);
         String data = placeholder.replace("party_slot_", "");
 
         if (data.isEmpty() || data.length() == 0) {
