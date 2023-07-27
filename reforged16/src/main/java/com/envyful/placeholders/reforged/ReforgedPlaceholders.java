@@ -24,6 +24,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
         this.registerPlaceholder(new PartyExpToLevelExtension());
         this.registerPlaceholder(new PartyFormExtension());
         this.registerPlaceholder(new PartyPaletteExtension());
+        this.registerPlaceholder(new PartyHeldItemExtension());
         this.registerPlaceholder(new PartyGenderExtension());
         this.registerPlaceholder(new PartyGrowthExtension());
         this.registerPlaceholder(new PartyLevelExtension());
