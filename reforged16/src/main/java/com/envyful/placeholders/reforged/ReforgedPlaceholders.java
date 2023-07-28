@@ -71,6 +71,12 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
         this.registerPlaceholder(new SpeciesPostEvolutionsExtension());
         this.registerPlaceholder(new SpeciesPreEvolutionsExtension());
         this.registerPlaceholder(new SpeciesSecondTypeExtension());
+        this.registerPlaceholder(new PartyUnbreedableExtension());
+        this.registerPlaceholder(new PartyUntradeableExtension());
+        this.registerPlaceholder(new PartyMoveExtension(1));
+        this.registerPlaceholder(new PartyMoveExtension(2));
+        this.registerPlaceholder(new PartyMoveExtension(3));
+        this.registerPlaceholder(new PartyMoveExtension(4));
         this.registerPlaceholder(new AverageLevelExtension());
         this.registerPlaceholder(new BalanceExtension());
         this.registerPlaceholder(new DexCountExtension());
