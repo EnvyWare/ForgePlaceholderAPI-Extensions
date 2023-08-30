@@ -18,6 +18,7 @@ rootProject.name = 'ForgePlaceholders-Extensions'
 
 include 'forge',
         'forge16',
+        'forge20',
         'reforged',
         'reforged16',
         'luckperms',

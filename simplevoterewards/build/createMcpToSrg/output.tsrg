@@ -1,3 +1,4 @@
+tsrg2 left right
 net/minecraft/advancements/Advancement net/minecraft/advancements/Advancement
 	children field_192082_g
 	criteria field_192080_e

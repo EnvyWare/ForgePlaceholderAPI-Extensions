@@ -22,7 +22,7 @@ subprojects {
     }
 
     dependencies {
-        compileOnly 'com.envyful.papi:api:2.0.5'
+        compileOnly "com.envyful.papi:api:2.0.5"
     }
 
     task wrapper(type: Wrapper) {
