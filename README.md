@@ -1,4 +1,4 @@
-# ForgePlaceholderAPI Extensions [![Discord](https://img.shields.io/discord/831966641586831431)](https://discord.gg/7vqgtrjDGw)
+# ForgePlaceholderAPI Extensions [![Discord](https://img.shields.io/discord/831966641586831431)](https://discord.gg/7vqgtrjDGw)[![Downloads](https://img.shields.io/github/downloads/EnvyWare/ForgePlaceholderAPI-Extensions/total.svg)](https://github.com/EnvyWare/ForgePlaceholderAPI-Extensions/releases)
 
 A repository containing some ForgePlaceholderAPI placeholder extensions.
 
