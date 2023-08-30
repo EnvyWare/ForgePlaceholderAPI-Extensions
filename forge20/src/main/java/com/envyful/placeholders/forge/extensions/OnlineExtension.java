@@ -3,7 +3,7 @@ package com.envyful.placeholders.forge.extensions;
 import com.envyful.papi.api.manager.extensions.type.SimpleExtension;
 import com.google.common.collect.Lists;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
+import net.minecraftforge.server.ServerLifecycleHooks;
 
 import java.util.List;
 
