@@ -1,5 +1,9 @@
-apply plugin: 'net.minecraftforge.gradle'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(11)
 minecraftVersion = "1.12.2"
 
 minecraft {
@@ -7,7 +11,9 @@ minecraft {
 }
 
 jar {
-    archiveName = "ReforgedPlaceholders.jar"
+        setArchiveBaseName('ReforgedPlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
 }
 
 repositories {

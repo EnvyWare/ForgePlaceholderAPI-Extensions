@@ -1,5 +1,9 @@
-apply plugin: 'net.minecraftforge.gradle'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(11)
 minecraftVersion = "1.16.5"
 
 minecraft {
@@ -11,5 +15,7 @@ dependencies {
 }
 
 jar {
-    archiveName = "ForgePlaceholders.jar"
+        setArchiveBaseName('ForgePlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
 }

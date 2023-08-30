@@ -1,5 +1,9 @@
-apply plugin: 'net.minecraftforge.gradle'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(11)
 minecraftVersion = "1.12.2"
 
 minecraft {
@@ -7,7 +11,9 @@ minecraft {
 }
 
 jar {
-    archiveName = "SpigotPlaceholders.jar"
+        setArchiveBaseName('SpigotPlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
 }
 
 repositories {
@@ -26,6 +32,6 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     compileOnly("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
-    implementation group: 'com.envyful.api', name: 'commons', version: '4.8.1'
+    implementation group: 'com.envyful.api', name: 'commons', version: '5.0.3'
     compileOnly ('papi:PlaceholderAPI-2.11.1:1.0')
 }

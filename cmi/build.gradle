@@ -1,5 +1,9 @@
-apply plugin: 'net.minecraftforge.gradle'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(11)
 minecraftVersion = "1.12.2"
 
 minecraft {
@@ -7,25 +11,23 @@ minecraft {
 }
 
 jar {
-    archiveName = "CMIPlaceholders.jar"
+    setArchiveBaseName('CMIPlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
 }
 
 repositories {
-    flatDir {
-        dirs '../../Libraries/'
-    }
     flatDir {
         dirs '../libs/'
     }
 
     maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
-    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     compileOnly("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
-    implementation group: 'com.envyful.api', name: 'commons', version: '4.8.1'
+    implementation group: 'com.envyful.api', name: 'commons', version: '5.0.3'
     implementation 'com.github.Zrips:CMIAPI8.7.8.2:0.0.1'
 }

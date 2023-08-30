@@ -1,5 +1,9 @@
-apply plugin: 'net.minecraftforge.gradle'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(11)
 minecraftVersion = "1.16.5"
 
 minecraft {
@@ -7,7 +11,9 @@ minecraft {
 }
 
 jar {
-    archiveName = "UltimatePokeBuilderPlaceholders.jar"
+        setArchiveBaseName('UltimatePokeBuilderPlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
 }
 
 repositories {
@@ -24,6 +30,6 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.22'
 
-    implementation group: 'com.envyful.api', name: 'commons', version: '4.8.1'
+    implementation group: 'com.envyful.api', name: 'commons', version: '5.0.3'
     compileOnly 'com.envyful.economies.forge:UltimatePokeBuilder-Forge-2.1.6-1.16.5:1.0'
 }
