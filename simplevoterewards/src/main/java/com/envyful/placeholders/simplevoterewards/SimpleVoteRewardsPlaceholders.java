@@ -10,7 +10,7 @@ public class SimpleVoteRewardsPlaceholders extends AbstractPlaceholderManager<En
 
     private static final String IDENTIFIER = "simplevoterewards";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "3.0.1";
+    private static final String VERSION = "3.0.2";
     private static final String NAME = "simplevoterewards";
 
     public SimpleVoteRewardsPlaceholders() {

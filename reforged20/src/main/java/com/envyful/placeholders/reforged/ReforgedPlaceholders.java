@@ -10,7 +10,7 @@ public class ReforgedPlaceholders extends AbstractPlaceholderManager<ServerPlaye
 
     private static final String IDENTIFIER = "reforged16";
     private static final String[] AUTHORS = new String[] { "Envyful" };
-    private static final String VERSION = "3.0.1";
+    private static final String VERSION = "3.0.2";
     private static final String NAME = "reforged16";
 
     public ReforgedPlaceholders() {
