@@ -1,0 +1,36 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraftVersion = '1.20.1'
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+}
+
+jar {
+        setArchiveBaseName('SpigotPlaceholders')
+    setArchiveVersion('')
+    setArchiveClassifier('')
+}
+
+repositories {
+    flatDir {
+        dirs '../../Libraries/'
+    }
+    flatDir {
+        dirs '../libs/'
+    }
+
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:1.20.1-47.1.44"
+
+    compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
+    implementation group: 'com.envyful.api', name: 'commons', version: '5.0.3'
+    compileOnly ('papi:PlaceholderAPI-2.11.1:1.0')
+}
