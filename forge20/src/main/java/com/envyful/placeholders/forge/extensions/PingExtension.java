@@ -20,6 +20,6 @@ public class PingExtension extends SimpleExtension<ServerPlayer> {
 
     @Override
     public String parse(ServerPlayer player, String placeholder) {
-        return player.latency + "";
+        return player.connection.latency() + "";
     }
 }

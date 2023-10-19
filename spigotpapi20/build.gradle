@@ -3,10 +3,10 @@ plugins {
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-minecraftVersion = '1.20.1'
+minecraftVersion = "1.20.2"
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: "1.20.2"
 }
 
 jar {
@@ -28,9 +28,9 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.20.1-47.1.44"
+    minecraft 'net.minecraftforge:forge:1.20.2-48.0.30'
 
     compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
-    implementation group: 'com.envyful.api', name: 'commons', version: '5.0.3'
+    implementation group: 'com.envyful.api', name: 'commons', version: '5.5.1'
     compileOnly ('papi:PlaceholderAPI-2.11.1:1.0')
 }

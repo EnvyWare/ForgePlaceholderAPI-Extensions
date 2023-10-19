@@ -22,7 +22,7 @@ public class DexPercentageExtension extends SimpleExtension<ServerPlayer> {
 
     @Override
     public String parse(ServerPlayer player, String placeholder) {
-        PlayerPartyStorage party = StorageProxy.getParty(player);
+        PlayerPartyStorage party = StorageProxy.getPartyNow(player);
 
         return String.format(
                 "%.2f",

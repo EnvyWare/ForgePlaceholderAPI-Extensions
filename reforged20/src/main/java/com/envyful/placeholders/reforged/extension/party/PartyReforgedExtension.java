@@ -49,7 +49,7 @@ public abstract class PartyReforgedExtension extends AbstractExtension<ServerPla
             return null;
         }
 
-        PlayerPartyStorage party = StorageProxy.getParty(player);
+        PlayerPartyStorage party = StorageProxy.getPartyNow(player);
         Pokemon pokemon = party.get(slot);
         return parse(player, placeholder, pokemon);
     }

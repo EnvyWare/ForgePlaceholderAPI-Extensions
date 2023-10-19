@@ -3,10 +3,10 @@ plugins {
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-minecraftVersion = "1.20.1"
+minecraftVersion = "1.20.2"
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: '1.20.2'
 }
 
 jar {
@@ -18,7 +18,7 @@ jar {
 repositories {}
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.20.1-47.1.44"
+    minecraft 'net.minecraftforge:forge:1.20.2-48.0.30'
 
-    implementation 'pixelmon:Pixelmon-1.20.1-9.2.1-server:9.2.1'
+    implementation 'pixelmon:Pixelmon-1.20.2-9.2.4-server:9.2.4'
 }

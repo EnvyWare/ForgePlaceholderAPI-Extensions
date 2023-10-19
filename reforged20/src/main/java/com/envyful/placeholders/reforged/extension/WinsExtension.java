@@ -21,7 +21,7 @@ public class WinsExtension extends SimpleExtension<ServerPlayer> {
 
     @Override
     public String parse(ServerPlayer player, String placeholder) {
-        PlayerPartyStorage party = StorageProxy.getParty(player);
+        PlayerPartyStorage party = StorageProxy.getPartyNow(player);
 
         if (party.stats == null) {
             return "0";

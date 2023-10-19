@@ -21,7 +21,7 @@ public class SeenCountExtension extends SimpleExtension<ServerPlayer> {
 
     @Override
     public String parse(ServerPlayer player, String placeholder) {
-        PlayerPartyStorage party = StorageProxy.getParty(player);
+        PlayerPartyStorage party = StorageProxy.getPartyNow(player);
         return party.playerPokedex.countSeen() + "";
     }
 }

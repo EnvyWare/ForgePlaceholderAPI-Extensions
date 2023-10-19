@@ -22,6 +22,6 @@ public class BalanceExtension extends SimpleExtension<ServerPlayer> {
 
     @Override
     public String parse(ServerPlayer player, String placeholder) {
-        return BankAccountProxy.getBankAccount(player).map(BankAccount::getBalance).orElse(BigDecimal.ZERO).toPlainString();
+        return BankAccountProxy.getBankAccount(player).thenApply(BankAccount::getBalance).join().toPlainString();
     }
 }
